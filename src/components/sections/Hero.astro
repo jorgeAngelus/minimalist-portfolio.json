@@ -1,0 +1,172 @@
+---
+import { basics } from "../../cv.json";
+const {name,label,image,location,profiles,email,phone} = basics
+const {city,region} = location
+
+import Section from '@/components/Section.astro' 
+/* ICONOS */
+import Mail from '@/icons/mail.astro'
+import Phone from '@/icons/phone.astro'
+import GitHub from '@/icons/github.astro'
+import X from '@/icons/x.astro'
+import LinkedIn from '@/icons/linkedin.astro'
+import WorldMap from '@/icons/WorldMap.astro'
+const SOCIAL_ICONS: Record<string,any> = {GitHub,LinkedIn,X} /* conjunto de iconos importados */
+
+const linkedInInfo = profiles.find(({network}) => network === "LinkedIn") /* buscar el perfil de linkedin */
+const linkedinurl = linkedInInfo?.url /* si existe el perfil de linkedin, guardalo en la variable url */
+const printinfo = [email,phone,linkedinurl].filter(Boolean).join("  •   ") /* filtrar los valores que no son null o undefined */
+
+---
+
+
+<Section >
+    <div class="container">
+        <div class="info">
+            <h1>{name}</h1>
+            <h2>{label}</h2>
+            <span>
+                <WorldMap /> 
+                 {city}, {region}
+            </span>
+            <footer class="print">
+                {printinfo}
+            </footer>
+            <footer class="no-print">
+                <div class="print">
+                    {printinfo}
+                </div>
+                {
+                    email &&( /* evaluar en un if */
+                        <a 
+                            href={`mailto:${email}`} 
+                            title={`Enviar un correo electronico a ${name} al correo ${email}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Mail />
+
+                        </a>
+                    )
+                }
+                {
+                    phone &&( /* evaluar en un if */
+                        <a 
+                            href={`tel:${phone}`} 
+                            title={`LLamar por telefono a ${name} al número ${phone}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Phone />
+
+                        </a>
+                    )
+                }
+                {
+                    profiles.map(({network,url,username})=>{
+                        const Icon = SOCIAL_ICONS[network] /* buscar el icono en el objeto SOCIAL_ICONS */
+                        if(!Icon) return null /* si no existe el icono, no lo muestres */
+                        return (
+                            <a 
+                                href={url} 
+                                title={`Visitar el perfil de ${name} en ${network}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Icon />
+                            </a>
+                        )
+                    })
+                }
+            </footer>
+        </div>
+            <figure>
+                <img src={image} alt={name} />
+            </figure>
+
+    </div>
+
+</Section>
+
+
+
+<style>
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-right: 32px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-weight: 500;
+        color: #444;
+        font-size: 1.1rem;
+        text-wrap: balance;
+    }
+    img{
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        width: 128px;
+        border-radius: 6px;
+    }
+    span{
+        color: #666;
+        display: flex;
+        align-items: center;
+        gap:0.25rem;
+        font-size: 0.85rem;
+        letter-spacing: -0.05rem;
+    }
+
+    footer{
+        font-size: 0.65rem;
+        color: #555;
+        display: flex;
+        gap: 4px;
+        margin-top: 8px;
+    }
+    footer a{
+        color: #777;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #eee;
+        padding: 4px;
+        height: 32px;
+        width: 32px;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+    footer a:hover{
+        border: 1px solid #ddd;
+        background: #eee;
+    }
+
+    @media print{
+        .no-print{
+            display: none;
+        }
+    }
+
+    .print{
+        display: none;
+    }
+
+    @media print {
+    .print{
+            display: block;
+          }
+    }
+
+    
+</style>

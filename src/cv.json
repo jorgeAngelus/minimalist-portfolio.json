@@ -1,0 +1,219 @@
+{
+    "basics": {
+      "name": "Jorge Maldonado Casas",
+      "label": "Developer Web and Data Analyst",
+      "image": "/me.webp",
+      "email": "ing.jorgemc@gmail.com",
+      "phone": "(52) 55-87-93-67-48",
+      "url": "",
+      "summary": "Soy Analista de Datos con una gran pasión por transformar información en soluciones útiles y comprensibles. Me interesa especialmente la tecnología de ArcGIS y cómo el análisis geoespacial puede aportar valor en distintos contextos. Actualmente, estoy ampliando mis horizontes hacia el desarrollo web, aprendiendo el framework Astro para crear experiencias modernas, rápidas y accesibles.",
+      "location": {
+        "address": "Ricardo Flores Magón Mz 27 Lt 50 Dpto 6",
+        "postalCode": "Mx 09660",
+        "city": "Iztapalapa",
+        "countryCode": "MX",
+        "region": "Mexico City"
+      },
+      "profiles": [
+        {
+        "network": "X",
+        "username": "jorgeAngelus07",
+        "url": "https://X.com/jorgeAngelus07"
+        },
+        {
+          "network": "LinkedIn",
+          "username": "jorgemc-111007",
+          "url": "https://www.linkedin.com/in/jorgemc-111007/"
+        },
+        {
+          "network": "GitHub",
+          "username": "jorgeAngelus",
+          "url": "https://github.com/jorgeAngelus"
+        }
+    ]
+    },
+    "work": [{
+      "name": "Farmacéuticos Rayeré",
+      "position": "Analista de Productividad y Soporte Técnico",
+      "url": "https://company.com",
+      "startDate": "2022-06-26",
+      "endDate": "2025-01-15",
+      "summary": "Escribir un resumen de la experiencia laboral aquí. Puedes incluir información sobre las tareas realizadas, los logros alcanzados y cualquier otro detalle relevante.",
+      "highlights": [
+        "Escribir un resumen de la experiencia laboral aquí. Puedes incluir información sobre las tareas realizadas, los logros alcanzados y cualquier otro detalle relevante."
+      ]
+    },
+    {
+      "name": "Grupo Knobloch",
+      "position": "Analista y ejecutivo de cuentas",
+      "url": "https://company.com",
+      "startDate": "2019-01-01",
+      "endDate": "2022-06-01",
+      "summary": "Escribir un resumen de la experiencia laboral aquí. Puedes incluir información sobre las tareas realizadas, los logros alcanzados y cualquier otro detalle relevante.",
+      "highlights": [
+        "Escribir un resumen de la experiencia laboral aquí. Puedes incluir información sobre las tareas realizadas, los logros alcanzados y cualquier otro detalle relevante."
+      ]
+    },
+    {
+      "name": "ESRI. SIGSA",
+      "position": "Analista de Soporte Técnico",
+      "url": "https://company.com",
+      "startDate": "2016-05-01",
+      "endDate": "2019-01-01",
+      "summary": "Escribir un resumen de la experiencia laboral aquí. Puedes incluir información sobre las tareas realizadas, los logros alcanzados y cualquier otro detalle relevante.",
+      "highlights": [
+        "Escribir un resumen de la experiencia laboral aquí. Puedes incluir información sobre las tareas realizadas, los logros alcanzados y cualquier otro detalle relevante."
+      ]
+    }
+  ],
+    "education": [{
+      "institution": "Facultad de Estudios Superiores Aragón, UNAM",
+      "url": "https://institution.com/",
+      "area": "Ingeniería en Computación",
+      "studyType": "Licenciatura",
+      "startDate": "2011-06-01",
+      "endDate": "2014-11-01",
+      "score": "8.0",
+      "courses": [
+        "Linux Basic",
+        "Soporte Tecnico N1",
+        "Comenzando con Photoshop"
+
+      ]
+    }],
+    "awards": [{
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }],
+    "certificates": [{
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }],
+    "publications": [{
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }],
+    "skills": [{
+      "name": "Web Development",
+      "level": "Beginner",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Astro"
+      ]
+    },
+    {
+      "name": "Data Analysis",
+      "level": "Intermediate",
+      "keywords": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "ArcGIS"
+      ]
+    },
+    {
+      "name": "Data Visualization",
+      "level": "Intermediate",
+      "keywords": [
+        "Tableau",
+        "Power BI"
+      ]
+    },
+    {
+      "name": "Technical Support",
+      "level": "Intermediate",
+      "keywords": [
+        "Windows",
+        "Linux"
+      ]
+    }],
+    "languages": [{
+      "language": "English",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "German",
+      "fluency": "Beginner"
+    }],
+    "interests": [{
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }],
+    "references": [{
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }],
+    "projects": [{
+      "name": "Project1",
+      "isActive": true,
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "url": "https://project.com/"
+    },
+    {
+      "name": "Project2",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "url": "https://project.com/"
+    },
+    {
+      "name": "Project3",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "url": "https://project.com/"
+    },
+    {
+      "name": "Project4",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "url": "https://project.com/"
+    },
+    {
+      "name": "Project5",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "url": "https://project.com/"
+    },
+    {
+      "name": "Project6",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "url": "https://project.com/"
+    }]
+  }
